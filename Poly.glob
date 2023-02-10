@@ -1,0 +1,997 @@
+DIGEST a223cefa8807cd63d270b79b959166f3
+FPoly
+R15:20 Coq.Strings.String <> <> lib
+R38:41 Coq.Lists.List <> <> lib
+R60:74 Coq.Arith.EqNat <> <> lib
+R92:103 Coq.Init.Nat <> <> lib
+ind 144:146 <> mem
+constr 164:168 <> empty
+constr 172:177 <> record
+binder 149:149 <> X:1
+R184:186 Coq.Init.Datatypes <> nat ind
+binder 180:180 <> i:4
+R194:194 Poly <> X:1 var
+binder 190:190 <> v:5
+def 210:233 <> getRecordValueFromMemory
+binder 236:236 <> X:6
+R251:253 Poly <> mem ind
+R255:255 Poly <> X:6 var
+binder 247:247 <> m:7
+R269:269 Poly <> X:6 var
+binder 259:265 <> default:8
+R283:283 Poly <> m:7 var
+R294:298 Poly <> empty constr
+R305:311 Poly <> default:8 var
+R317:322 Poly <> record constr
+def 352:374 <> getRecordValueFromIndex
+binder 377:377 <> X:10
+R393:396 Coq.Init.Datatypes <> list ind
+R399:401 Poly <> mem ind
+R403:403 Poly <> X:10 var
+binder 388:389 <> lm:11
+R412:414 Coq.Init.Datatypes <> nat ind
+binder 408:408 <> k:12
+R428:428 Poly <> X:10 var
+binder 418:424 <> default:13
+R442:443 Poly <> lm:11 var
+R454:456 Coq.Init.Datatypes <> nil constr
+R461:467 Poly <> default:13 var
+R474:475 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R510:514 Poly <> empty constr
+R521:543 Poly <> getRecordValueFromIndex:14 def
+R552:558 Poly <> default:13 var
+R550:550 Poly <> k:12 var
+R575:580 Poly <> record constr
+R595:601 Coq.Arith.EqNat <> beq_nat syndef
+R603:603 Poly <> k:12 var
+R620:642 Poly <> getRecordValueFromIndex:14 def
+R651:657 Poly <> default:13 var
+R649:649 Poly <> k:12 var
+def 695:712 <> getIndexFromMemory
+binder 715:715 <> X:17
+R730:732 Poly <> mem ind
+R734:734 Poly <> X:17 var
+binder 726:726 <> m:18
+R748:748 Poly <> m:18 var
+R759:763 Poly <> empty constr
+R776:781 Poly <> record constr
+ind 812:827 <> poly_binary_tree
+constr 844:847 <> Leaf
+constr 892:896 <> Alpha
+constr 948:951 <> Beta
+binder 830:830 <> X:20
+R857:860 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R851:854 Coq.Init.Datatypes <> list ind
+R856:856 Poly <> X:20 var
+R867:870 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R861:864 Coq.Init.Datatypes <> list ind
+R866:866 Poly <> X:20 var
+R871:886 Poly <> poly_binary_tree:21 ind
+R888:888 Poly <> X:20 var
+R901:904 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R900:900 Poly <> X:20 var
+R923:926 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R905:920 Poly <> poly_binary_tree:21 ind
+R922:922 Poly <> X:20 var
+R927:942 Poly <> poly_binary_tree:21 ind
+R944:944 Poly <> X:20 var
+R974:977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R956:971 Poly <> poly_binary_tree:21 ind
+R973:973 Poly <> X:20 var
+R996:999 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R978:993 Poly <> poly_binary_tree:21 ind
+R995:995 Poly <> X:20 var
+R1000:1015 Poly <> poly_binary_tree:21 ind
+R1017:1017 Poly <> X:20 var
+R1027:1030 Poly <> Leaf constr
+R1036:1037 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1038:1040 Coq.Init.Datatypes <> nil constr
+R1043:1045 Coq.Init.Datatypes <> nil constr
+R1055:1059 Poly <> Alpha constr
+R1066:1069 Poly <> Leaf constr
+R1075:1076 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1077:1079 Coq.Init.Datatypes <> nil constr
+R1082:1084 Coq.Init.Datatypes <> nil constr
+R1095:1099 Poly <> Alpha constr
+R1106:1109 Poly <> Beta constr
+R1114:1118 Poly <> Alpha constr
+R1126:1130 Poly <> Alpha constr
+R1137:1140 Poly <> Leaf constr
+R1144:1146 Coq.Init.Datatypes <> nil constr
+R1148:1150 Coq.Init.Datatypes <> nil constr
+R1157:1161 Poly <> Alpha constr
+R1168:1171 Poly <> Leaf constr
+R1175:1177 Coq.Init.Datatypes <> nil constr
+R1179:1181 Coq.Init.Datatypes <> nil constr
+ind 1232:1234 <> lLF
+constr 1241:1245 <> lAtom
+constr 1265:1268 <> Bang
+R1255:1258 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1249:1254 Coq.Strings.String <> string ind
+R1259:1261 Poly <> lLF:23 ind
+R1275:1278 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1272:1274 Poly <> lLF:23 ind
+R1279:1281 Poly <> lLF:23 ind
+ind 1295:1304 <> parameters
+constr 1311:1314 <> none
+constr 1318:1325 <> selector
+R1332:1335 Coq.Init.Datatypes <> bool ind
+binder 1328:1328 <> b:27
+ind 1350:1357 <> SignedLF
+constr 1375:1375 <> T
+binder 1360:1360 <> X:28
+R1382:1385 Coq.Init.Datatypes <> bool ind
+binder 1378:1378 <> b:31
+R1393:1393 Poly <> X:28 var
+binder 1389:1389 <> L:32
+ind 1408:1412 <> check
+constr 1430:1439 <> checkpoint
+binder 1415:1415 <> X:33
+R1461:1464 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1443:1458 Poly <> poly_binary_tree ind
+R1460:1460 Poly <> X:33 var
+R1475:1478 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1465:1474 Poly <> parameters ind
+R1479:1483 Poly <> check:34 ind
+R1485:1485 Poly <> X:33 var
+ind 1499:1501 <> stt
+constr 1522:1526 <> state
+binder 1504:1504 <> X:36
+binder 1506:1506 <> Y:37
+R1548:1551 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1530:1545 Poly <> poly_binary_tree ind
+R1547:1547 Poly <> X:36 var
+R1566:1569 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1552:1555 Coq.Init.Datatypes <> list ind
+R1558:1562 Poly <> check ind
+R1564:1564 Poly <> X:36 var
+R1582:1585 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1570:1573 Coq.Init.Datatypes <> list ind
+R1576:1578 Poly <> mem ind
+R1580:1580 Poly <> Y:37 var
+R1586:1588 Poly <> stt:38 ind
+R1592:1592 Poly <> Y:37 var
+R1590:1590 Poly <> X:36 var
+def 1628:1630 <> pop
+binder 1635:1635 <> X:40
+R1652:1655 Coq.Init.Datatypes <> list ind
+R1657:1657 Poly <> X:40 var
+binder 1648:1648 <> l:41
+binder 1660:1666 <> default:42
+R1679:1679 Poly <> l:41 var
+R1686:1688 Coq.Init.Datatypes <> nil constr
+R1693:1699 Poly <> default:42 var
+R1704:1705 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 1731:1737 <> explode
+binder 1742:1742 <> X:44
+R1759:1762 Coq.Init.Datatypes <> list ind
+R1764:1764 Poly <> X:44 var
+binder 1755:1755 <> l:45
+R1776:1776 Poly <> l:45 var
+R1783:1785 Coq.Init.Datatypes <> nil constr
+R1790:1792 Coq.Init.Datatypes <> nil constr
+R1797:1798 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 1823:1826 <> upto
+R1833:1835 Coq.Init.Datatypes <> nat ind
+binder 1829:1829 <> k:47
+R1849:1849 Poly <> k:47 var
+R1865:1867 Coq.Init.Datatypes <> nil constr
+R1873:1873 Coq.Init.Datatypes <> S constr
+R1883:1886 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1880:1880 Coq.Init.Datatypes <> S constr
+R1887:1890 Poly <> upto:48 def
+ind 2280:2286 <> indexed
+constr 2304:2304 <> i
+binder 2289:2289 <> X:50
+R2311:2313 Coq.Init.Datatypes <> nat ind
+binder 2307:2307 <> n:53
+R2321:2321 Poly <> X:50 var
+binder 2317:2317 <> v:54
+R2358:2358 Poly <> i constr
+R2398:2398 Poly <> i constr
+def 2467:2484 <> getValueAtPosition
+binder 2487:2487 <> X:55
+R2502:2505 Coq.Init.Datatypes <> list ind
+R2507:2507 Poly <> X:55 var
+binder 2498:2498 <> l:56
+R2515:2517 Coq.Init.Datatypes <> nat ind
+binder 2511:2511 <> p:57
+R2530:2530 Poly <> X:55 var
+binder 2521:2527 <> default:58
+R2544:2544 Poly <> l:56 var
+R2555:2557 Coq.Init.Datatypes <> nil constr
+R2562:2568 Poly <> default:58 var
+R2575:2576 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2587:2593 Coq.Arith.EqNat <> beq_nat syndef
+R2595:2595 Poly <> p:57 var
+R2612:2629 Poly <> getValueAtPosition:59 def
+R2640:2646 Poly <> default:58 var
+R2636:2636 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R2635:2635 Poly <> p:57 var
+R2664:2681 Poly <> getValueAtPosition def
+R2685:2686 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2688:2689 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2691:2692 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2694:2695 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2697:2698 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2699:2701 Coq.Init.Datatypes <> nil constr
+def 2719:2725 <> combine
+binder 2728:2728 <> X:61
+R2743:2745 Coq.Init.Datatypes <> nat ind
+binder 2739:2739 <> k:62
+R2753:2756 Coq.Init.Datatypes <> list ind
+R2758:2758 Poly <> X:61 var
+binder 2749:2749 <> v:63
+R2766:2769 Coq.Init.Datatypes <> list ind
+R2771:2771 Poly <> X:61 var
+binder 2762:2762 <> l:64
+R2788:2790 Coq.Init.Datatypes <> nat ind
+binder 2775:2784 <> startValue:65
+R2803:2803 Poly <> X:61 var
+binder 2794:2800 <> default:66
+R2817:2817 Poly <> k:62 var
+R2828:2828 Coq.Init.Datatypes <> O constr
+R2833:2835 Coq.Init.Datatypes <> nil constr
+R2841:2841 Coq.Init.Datatypes <> S constr
+R2848:2848 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2919:2936 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2849:2849 Poly <> i constr
+R2864:2864 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R2854:2863 Poly <> startValue:65 var
+R2870:2871 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R2869:2869 Poly <> v:63 var
+R2872:2872 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2912:2914 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2873:2890 Poly <> getValueAtPosition def
+R2905:2911 Poly <> default:66 var
+R2894:2903 Poly <> startValue:65 var
+R2892:2892 Poly <> l:64 var
+R2915:2917 Coq.Init.Datatypes <> nil constr
+R2937:2943 Poly <> combine:67 def
+R2968:2974 Poly <> default:66 var
+R2962:2964 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R2952:2961 Poly <> startValue:65 var
+R2949:2949 Poly <> l:64 var
+R2947:2947 Poly <> v:63 var
+def 2995:3002 <> getIndex
+binder 3005:3005 <> X:69
+R3021:3027 Poly <> indexed ind
+R3029:3029 Poly <> X:69 var
+binder 3016:3017 <> el:70
+R3043:3044 Poly <> el:70 var
+R3055:3055 Poly <> i constr
+def 3087:3094 <> getValue
+binder 3097:3097 <> X:72
+R3113:3119 Poly <> indexed ind
+R3121:3121 Poly <> X:72 var
+binder 3108:3109 <> el:73
+R3135:3136 Poly <> el:73 var
+R3147:3147 Poly <> i constr
+def 3177:3181 <> break
+binder 3184:3184 <> X:75
+R3199:3202 Coq.Init.Datatypes <> list ind
+R3204:3204 Poly <> X:75 var
+binder 3195:3195 <> l:76
+R3221:3223 Coq.Init.Datatypes <> nat ind
+binder 3208:3217 <> startIndex:77
+R3236:3236 Poly <> l:76 var
+R3247:3249 Coq.Init.Datatypes <> nil constr
+R3254:3256 Coq.Init.Datatypes <> nil constr
+R3263:3264 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3271:3271 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3295:3298 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3324:3324 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3272:3272 Poly <> i constr
+R3276:3285 Poly <> startIndex:77 var
+R3289:3290 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3291:3293 Coq.Init.Datatypes <> nil constr
+R3299:3303 Poly <> break:78 def
+R3319:3321 Coq.Init.Nat <> ::nat_scope:x_'+'_x not
+R3309:3318 Poly <> startIndex:77 var
+def 3343:3352 <> combinator
+binder 3355:3355 <> X:80
+R3371:3374 Coq.Init.Datatypes <> list ind
+R3377:3383 Poly <> indexed ind
+R3386:3389 Coq.Init.Datatypes <> list ind
+R3391:3391 Poly <> X:80 var
+binder 3366:3367 <> li:81
+R3401:3404 Coq.Init.Datatypes <> list ind
+R3406:3406 Poly <> X:80 var
+binder 3397:3397 <> l:82
+R3420:3420 Poly <> X:80 var
+binder 3410:3416 <> default:83
+R3434:3435 Poly <> li:81 var
+R3446:3448 Coq.Init.Datatypes <> nil constr
+R3453:3455 Coq.Init.Datatypes <> nil constr
+R3462:3463 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3476:3477 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3547:3551 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3575:3575 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3478:3484 Poly <> combine def
+R3540:3546 Poly <> default:83 var
+R3528:3535 Poly <> getIndex def
+R3525:3525 Poly <> l:82 var
+R3513:3520 Poly <> getValue def
+R3487:3487 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R3496:3498 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R3509:3509 Coq.Init.Nat <> ::nat_scope:x_'-'_x not
+R3488:3493 Coq.Lists.List <> length syndef
+R3495:3495 Poly <> l:82 var
+R3499:3506 Poly <> getIndex def
+R3552:3561 Poly <> combinator:84 def
+R3568:3574 Poly <> default:83 var
+R3566:3566 Poly <> l:82 var
+def 3594:3599 <> select
+binder 3602:3602 <> X:86
+R3618:3621 Coq.Init.Datatypes <> list ind
+R3624:3630 Poly <> indexed ind
+R3633:3636 Coq.Init.Datatypes <> list ind
+R3638:3638 Poly <> X:86 var
+binder 3613:3614 <> li:87
+R3651:3653 Coq.Init.Datatypes <> nat ind
+binder 3644:3647 <> size:88
+R3667:3668 Poly <> li:87 var
+R3679:3681 Coq.Init.Datatypes <> nil constr
+R3686:3688 Coq.Init.Datatypes <> nil constr
+R3695:3696 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3707:3707 Coq.Init.Nat <> ::nat_scope:x_'<?'_x not
+R3718:3722 Coq.Init.Nat <> ::nat_scope:x_'<?'_x not
+R3708:3715 Poly <> getIndex def
+R3723:3726 Poly <> size:88 var
+R3762:3767 Poly <> select:89 def
+R3772:3775 Poly <> size:88 var
+R3735:3739 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3754:3754 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3740:3745 Poly <> select:89 def
+R3750:3753 Poly <> size:88 var
+def 3795:3801 <> power_r
+binder 3804:3804 <> X:91
+R3820:3823 Coq.Init.Datatypes <> list ind
+R3826:3832 Poly <> indexed ind
+R3835:3838 Coq.Init.Datatypes <> list ind
+R3840:3840 Poly <> X:91 var
+binder 3815:3816 <> li:92
+R3850:3853 Coq.Init.Datatypes <> list ind
+R3855:3855 Poly <> X:91 var
+binder 3846:3846 <> l:93
+R3869:3869 Poly <> X:91 var
+binder 3859:3865 <> default:94
+R3877:3879 Coq.Init.Datatypes <> nat ind
+binder 3873:3873 <> i:95
+R3893:3893 Poly <> i:95 var
+R3904:3904 Coq.Init.Datatypes <> O constr
+R3909:3911 Coq.Init.Datatypes <> nil constr
+R3917:3917 Coq.Init.Datatypes <> S constr
+R3943:3952 Poly <> combinator def
+R3979:3985 Poly <> default:94 var
+R3977:3977 Poly <> l:93 var
+R3955:3960 Poly <> select def
+R3966:3971 Coq.Lists.List <> length syndef
+R3973:3973 Poly <> l:93 var
+R3962:3963 Poly <> li:92 var
+binder 3934:3937 <> next:98
+R3997:3997 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4002:4007 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4052:4052 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3998:4001 Poly <> next:98 var
+R4008:4014 Poly <> power_r:96 def
+R4043:4049 Poly <> default:94 var
+R4041:4041 Poly <> l:93 var
+R4017:4022 Poly <> select def
+R4030:4035 Coq.Lists.List <> length syndef
+R4037:4037 Poly <> l:93 var
+R4024:4027 Poly <> next:98 var
+def 4071:4097 <> getAllValuesFromIndexedList
+binder 4100:4100 <> X:99
+R4115:4118 Coq.Init.Datatypes <> list ind
+R4121:4127 Poly <> indexed ind
+R4130:4133 Coq.Init.Datatypes <> list ind
+R4135:4135 Poly <> X:99 var
+binder 4111:4111 <> l:100
+R4142:4145 Coq.Init.Datatypes <> list ind
+R4148:4151 Coq.Init.Datatypes <> list ind
+R4153:4153 Poly <> X:99 var
+R4167:4167 Poly <> l:100 var
+R4178:4180 Coq.Init.Datatypes <> nil constr
+R4185:4187 Coq.Init.Datatypes <> nil constr
+R4194:4195 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4202:4202 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4213:4216 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4247:4247 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4203:4210 Poly <> getValue def
+R4217:4243 Poly <> getAllValuesFromIndexedList:101 def
+def 4268:4272 <> power
+binder 4275:4275 <> X:103
+R4290:4293 Coq.Init.Datatypes <> list ind
+R4295:4295 Poly <> X:103 var
+binder 4286:4286 <> l:104
+R4309:4309 Poly <> X:103 var
+binder 4299:4305 <> default:105
+R4326:4330 Poly <> break def
+R4332:4332 Poly <> l:104 var
+binder 4321:4321 <> b:106
+R4341:4367 Poly <> getAllValuesFromIndexedList def
+R4371:4373 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4404:4404 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R4370:4370 Poly <> b:106 var
+R4374:4380 Poly <> power_r def
+R4395:4400 Coq.Lists.List <> length syndef
+R4402:4402 Poly <> l:104 var
+R4386:4392 Poly <> default:105 var
+R4384:4384 Poly <> l:104 var
+R4382:4382 Poly <> b:106 var
+R4417:4421 Poly <> break def
+R4425:4426 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4428:4429 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4431:4432 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4434:4435 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4436:4438 Coq.Init.Datatypes <> nil constr
+R4479:4483 Poly <> power def
+R4489:4490 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4494:4495 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4499:4500 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4504:4505 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4506:4508 Coq.Init.Datatypes <> nil constr
+R4528:4533 Coq.Lists.List <> length syndef
+R4536:4540 Poly <> power def
+R4546:4547 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4551:4552 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4556:4557 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4561:4562 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4563:4565 Coq.Init.Datatypes <> nil constr
+R4586:4591 Coq.Lists.List <> length syndef
+R4594:4598 Poly <> power def
+R4604:4605 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4609:4610 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4614:4615 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4619:4620 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4624:4625 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4626:4628 Coq.Init.Datatypes <> nil constr
+R4649:4654 Coq.Lists.List <> length syndef
+R4657:4661 Poly <> power def
+R4667:4668 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4672:4673 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4677:4678 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4682:4683 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4687:4688 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4692:4693 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4694:4696 Coq.Init.Datatypes <> nil constr
+R4717:4722 Coq.Lists.List <> length syndef
+R4725:4729 Poly <> power def
+R4735:4736 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4740:4741 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4745:4746 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4750:4751 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4755:4756 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4760:4761 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4765:4766 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4767:4769 Coq.Init.Datatypes <> nil constr
+def 4848:4863 <> getTreeFromState
+binder 4866:4866 <> X:107
+binder 4868:4868 <> Y:108
+R4883:4885 Poly <> stt ind
+R4887:4887 Poly <> X:107 var
+R4889:4889 Poly <> Y:108 var
+binder 4879:4879 <> s:109
+R4903:4903 Poly <> s:109 var
+R4914:4918 Poly <> state constr
+def 4954:4979 <> getCheckpointListFromState
+binder 4982:4982 <> X:111
+binder 4984:4984 <> Y:112
+R4999:5001 Poly <> stt ind
+R5003:5003 Poly <> X:111 var
+R5005:5005 Poly <> Y:112 var
+binder 4995:4995 <> s:113
+R5019:5019 Poly <> s:113 var
+R5030:5034 Poly <> state constr
+def 5070:5087 <> getMemoryFromState
+binder 5090:5090 <> X:115
+binder 5092:5092 <> Y:116
+R5107:5109 Poly <> stt ind
+R5111:5111 Poly <> X:115 var
+R5113:5113 Poly <> Y:116 var
+binder 5103:5103 <> s:117
+R5127:5127 Poly <> s:117 var
+R5138:5142 Poly <> state constr
+def 5176:5181 <> expand
+binder 5186:5186 <> X:119
+binder 5188:5188 <> Y:120
+R5227:5230 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5209:5224 Poly <> poly_binary_tree ind
+R5226:5226 Poly <> X:119 var
+R5245:5248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5231:5234 Coq.Init.Datatypes <> list ind
+R5237:5241 Poly <> check ind
+R5243:5243 Poly <> X:119 var
+R5255:5258 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5249:5252 Coq.Init.Datatypes <> list ind
+R5254:5254 Poly <> X:119 var
+R5265:5268 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5259:5262 Coq.Init.Datatypes <> list ind
+R5264:5264 Poly <> X:119 var
+R5281:5284 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5269:5272 Coq.Init.Datatypes <> list ind
+R5275:5277 Poly <> mem ind
+R5279:5279 Poly <> Y:120 var
+R5295:5298 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5285:5294 Poly <> parameters ind
+R5299:5301 Poly <> stt ind
+R5303:5303 Poly <> X:119 var
+R5305:5305 Poly <> Y:120 var
+binder 5201:5205 <> apply:121
+R5315:5330 Poly <> poly_binary_tree ind
+R5332:5332 Poly <> X:119 var
+binder 5311:5311 <> t:122
+R5349:5364 Poly <> poly_binary_tree ind
+R5366:5366 Poly <> X:119 var
+binder 5338:5345 <> snapshot:123
+R5440:5449 Poly <> parameters ind
+binder 5431:5436 <> params:124
+R5459:5462 Coq.Init.Datatypes <> list ind
+R5465:5467 Poly <> mem ind
+R5469:5469 Poly <> Y:120 var
+binder 5455:5455 <> m:125
+R5481:5484 Coq.Init.Datatypes <> list ind
+R5487:5491 Poly <> check ind
+R5493:5493 Poly <> X:119 var
+binder 5476:5477 <> lc:126
+R5501:5503 Poly <> stt ind
+R5505:5505 Poly <> X:119 var
+R5507:5507 Poly <> Y:120 var
+R5520:5520 Poly <> t:122 var
+R5531:5534 Poly <> Leaf constr
+R5557:5561 Poly <> apply:121 var
+R5593:5598 Poly <> params:124 var
+R5591:5591 Poly <> m:125 var
+R5572:5573 Poly <> lc:126 var
+R5563:5570 Poly <> snapshot:123 var
+R5604:5608 Poly <> Alpha constr
+R5639:5644 Poly <> expand:127 def
+R5677:5678 Poly <> lc:126 var
+R5675:5675 Poly <> m:125 var
+R5668:5673 Poly <> params:124 var
+R5659:5666 Poly <> snapshot:123 var
+R5650:5654 Poly <> apply:121 var
+R5648:5648 Poly <> Y:120 var
+R5646:5646 Poly <> X:119 var
+binder 5630:5633 <> next:129
+R5690:5694 Poly <> state constr
+R5696:5696 Poly <> X:119 var
+R5698:5698 Poly <> Y:120 var
+R5709:5713 Poly <> Alpha constr
+R5715:5715 Poly <> X:119 var
+R5720:5735 Poly <> getTreeFromState def
+R5737:5737 Poly <> X:119 var
+R5739:5739 Poly <> Y:120 var
+R5741:5744 Poly <> next:129 var
+R5757:5782 Poly <> getCheckpointListFromState def
+R5784:5784 Poly <> X:119 var
+R5786:5786 Poly <> Y:120 var
+R5788:5791 Poly <> next:129 var
+R5803:5820 Poly <> getMemoryFromState def
+R5822:5822 Poly <> X:119 var
+R5824:5824 Poly <> Y:120 var
+R5826:5829 Poly <> next:129 var
+R5836:5839 Poly <> Beta constr
+R5870:5875 Poly <> expand:127 def
+R5907:5908 Poly <> lc:126 var
+R5905:5905 Poly <> m:125 var
+R5898:5903 Poly <> params:124 var
+R5889:5896 Poly <> snapshot:123 var
+R5881:5885 Poly <> apply:121 var
+R5879:5879 Poly <> Y:120 var
+R5877:5877 Poly <> X:119 var
+binder 5860:5864 <> nextl:130
+R5934:5939 Poly <> expand:127 def
+R5971:5972 Poly <> lc:126 var
+R5969:5969 Poly <> m:125 var
+R5962:5967 Poly <> params:124 var
+R5953:5960 Poly <> snapshot:123 var
+R5945:5949 Poly <> apply:121 var
+R5943:5943 Poly <> Y:120 var
+R5941:5941 Poly <> X:119 var
+binder 5924:5928 <> nextr:131
+R5984:5988 Poly <> state constr
+R5990:5990 Poly <> X:119 var
+R5992:5992 Poly <> Y:120 var
+R6003:6006 Poly <> Beta constr
+R6008:6008 Poly <> X:119 var
+R6011:6026 Poly <> getTreeFromState def
+R6028:6028 Poly <> X:119 var
+R6030:6030 Poly <> Y:120 var
+R6032:6036 Poly <> nextl:130 var
+R6040:6055 Poly <> getTreeFromState def
+R6057:6057 Poly <> X:119 var
+R6059:6059 Poly <> Y:120 var
+R6061:6065 Poly <> nextr:131 var
+R6078:6078 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6115:6118 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6155:6155 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6079:6104 Poly <> getCheckpointListFromState def
+R6106:6106 Poly <> X:119 var
+R6108:6108 Poly <> Y:120 var
+R6110:6114 Poly <> nextl:130 var
+R6119:6144 Poly <> getCheckpointListFromState def
+R6146:6146 Poly <> X:119 var
+R6148:6148 Poly <> Y:120 var
+R6150:6154 Poly <> nextr:131 var
+R6167:6167 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6196:6199 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6228:6228 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R6168:6185 Poly <> getMemoryFromState def
+R6187:6187 Poly <> X:119 var
+R6189:6189 Poly <> Y:120 var
+R6191:6195 Poly <> nextl:130 var
+R6200:6217 Poly <> getMemoryFromState def
+R6219:6219 Poly <> X:119 var
+R6221:6221 Poly <> Y:120 var
+R6223:6227 Poly <> nextr:131 var
+def 6250:6260 <> getSelector
+R6267:6276 Poly <> parameters ind
+binder 6263:6263 <> p:132
+R6290:6290 Poly <> p:132 var
+R6301:6304 Poly <> none constr
+R6309:6312 Coq.Init.Datatypes <> true constr
+R6318:6325 Poly <> selector constr
+def 6351:6359 <> construct
+binder 6364:6364 <> X:134
+binder 6366:6366 <> Y:135
+R6405:6408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6387:6402 Poly <> poly_binary_tree ind
+R6404:6404 Poly <> X:134 var
+R6423:6426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6409:6412 Coq.Init.Datatypes <> list ind
+R6415:6419 Poly <> check ind
+R6421:6421 Poly <> X:134 var
+R6433:6436 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6427:6430 Coq.Init.Datatypes <> list ind
+R6432:6432 Poly <> X:134 var
+R6443:6446 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6437:6440 Coq.Init.Datatypes <> list ind
+R6442:6442 Poly <> X:134 var
+R6459:6462 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6447:6450 Coq.Init.Datatypes <> list ind
+R6453:6455 Poly <> mem ind
+R6457:6457 Poly <> Y:135 var
+R6473:6476 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6463:6472 Poly <> parameters ind
+R6477:6479 Poly <> stt ind
+R6481:6481 Poly <> X:134 var
+R6483:6483 Poly <> Y:135 var
+binder 6379:6383 <> apply:136
+R6500:6503 Coq.Init.Datatypes <> list ind
+R6505:6507 Coq.Init.Datatypes <> nat ind
+binder 6489:6496 <> deepness:137
+R6517:6532 Poly <> poly_binary_tree ind
+R6534:6534 Poly <> X:134 var
+binder 6513:6513 <> t:138
+R6544:6547 Coq.Init.Datatypes <> list ind
+R6550:6554 Poly <> check ind
+R6556:6556 Poly <> X:134 var
+binder 6540:6540 <> l:139
+R6567:6570 Coq.Init.Datatypes <> list ind
+R6573:6575 Poly <> mem ind
+R6577:6577 Poly <> Y:135 var
+binder 6563:6563 <> m:140
+R6588:6597 Poly <> parameters ind
+binder 6584:6584 <> p:141
+R6602:6604 Poly <> stt ind
+R6606:6606 Poly <> X:134 var
+R6608:6608 Poly <> Y:135 var
+R6621:6628 Poly <> deepness:137 var
+R6640:6642 Coq.Init.Datatypes <> nil constr
+R6647:6651 Poly <> state constr
+R6657:6657 Poly <> t:138 var
+R6659:6659 Poly <> l:139 var
+R6661:6661 Poly <> m:140 var
+R6668:6669 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R6695:6700 Poly <> expand def
+R6702:6702 Poly <> X:134 var
+R6704:6704 Poly <> Y:135 var
+R6706:6710 Poly <> apply:136 var
+R6712:6712 Poly <> t:138 var
+R6714:6714 Poly <> t:138 var
+R6716:6716 Poly <> p:141 var
+R6718:6718 Poly <> m:140 var
+R6720:6720 Poly <> l:139 var
+binder 6686:6689 <> next:144
+R6732:6740 Poly <> construct:142 def
+R6891:6891 Poly <> p:141 var
+R6854:6871 Poly <> getMemoryFromState def
+R6873:6873 Poly <> X:134 var
+R6875:6875 Poly <> Y:135 var
+R6877:6880 Poly <> next:144 var
+R6808:6833 Poly <> getCheckpointListFromState def
+R6835:6835 Poly <> X:134 var
+R6837:6837 Poly <> Y:135 var
+R6839:6842 Poly <> next:144 var
+R6772:6787 Poly <> getTreeFromState def
+R6789:6789 Poly <> X:134 var
+R6791:6791 Poly <> Y:135 var
+R6793:6796 Poly <> next:144 var
+R6754:6758 Poly <> apply:136 var
+R6744:6744 Poly <> Y:135 var
+R6742:6742 Poly <> X:134 var
+def 6912:6932 <> getTreeFromCheckpoint
+binder 6935:6935 <> X:145
+R6950:6954 Poly <> check ind
+R6956:6956 Poly <> X:145 var
+binder 6946:6946 <> c:146
+R6970:6970 Poly <> c:146 var
+R6981:6990 Poly <> checkpoint constr
+def 7022:7044 <> getParamsFromCheckpoint
+binder 7047:7047 <> X:148
+R7062:7066 Poly <> check ind
+R7068:7068 Poly <> X:148 var
+binder 7058:7058 <> c:149
+R7082:7082 Poly <> c:149 var
+R7093:7102 Poly <> checkpoint constr
+def 7132:7152 <> makeNewCheckpointList
+binder 7155:7155 <> X:151
+binder 7157:7157 <> Y:152
+R7171:7174 Coq.Init.Datatypes <> list ind
+R7177:7179 Poly <> stt ind
+R7181:7181 Poly <> X:151 var
+R7183:7183 Poly <> Y:152 var
+binder 7167:7167 <> l:153
+R7198:7198 Poly <> l:153 var
+R7209:7211 Coq.Init.Datatypes <> nil constr
+R7216:7218 Coq.Init.Datatypes <> nil constr
+R7225:7226 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7233:7233 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7266:7271 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7300:7300 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R7234:7259 Poly <> getCheckpointListFromState def
+R7261:7261 Poly <> X:151 var
+R7263:7263 Poly <> Y:152 var
+R7272:7292 Poly <> makeNewCheckpointList:154 def
+R7296:7296 Poly <> Y:152 var
+R7294:7294 Poly <> X:151 var
+def 7319:7342 <> getAllTreesFromListState
+binder 7345:7345 <> X:156
+binder 7347:7347 <> Y:157
+R7362:7365 Coq.Init.Datatypes <> list ind
+R7368:7370 Poly <> stt ind
+R7372:7372 Poly <> X:156 var
+R7374:7374 Poly <> Y:157 var
+binder 7358:7358 <> l:158
+R7389:7389 Poly <> l:158 var
+R7400:7402 Coq.Init.Datatypes <> nil constr
+R7407:7409 Coq.Init.Datatypes <> nil constr
+R7416:7417 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7424:7424 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7447:7453 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7485:7485 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7425:7440 Poly <> getTreeFromState def
+R7442:7442 Poly <> X:156 var
+R7444:7444 Poly <> Y:157 var
+R7454:7477 Poly <> getAllTreesFromListState:159 def
+R7481:7481 Poly <> Y:157 var
+R7479:7479 Poly <> X:156 var
+def 7538:7555 <> checkpoint_handler
+binder 7560:7560 <> X:161
+binder 7562:7562 <> Y:162
+R7601:7604 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7583:7598 Poly <> poly_binary_tree ind
+R7600:7600 Poly <> X:161 var
+R7619:7622 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7605:7608 Coq.Init.Datatypes <> list ind
+R7611:7615 Poly <> check ind
+R7617:7617 Poly <> X:161 var
+R7629:7632 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7623:7626 Coq.Init.Datatypes <> list ind
+R7628:7628 Poly <> X:161 var
+R7639:7642 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7633:7636 Coq.Init.Datatypes <> list ind
+R7638:7638 Poly <> X:161 var
+R7655:7658 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7643:7646 Coq.Init.Datatypes <> list ind
+R7649:7651 Poly <> mem ind
+R7653:7653 Poly <> Y:162 var
+R7669:7672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7659:7668 Poly <> parameters ind
+R7673:7675 Poly <> stt ind
+R7677:7677 Poly <> X:161 var
+R7679:7679 Poly <> Y:162 var
+binder 7575:7579 <> apply:163
+R7696:7699 Coq.Init.Datatypes <> list ind
+R7701:7703 Coq.Init.Datatypes <> nat ind
+binder 7685:7692 <> deepness:164
+R7714:7717 Coq.Init.Datatypes <> list ind
+R7720:7724 Poly <> check ind
+R7726:7726 Poly <> X:161 var
+binder 7709:7710 <> lc:165
+R7737:7740 Coq.Init.Datatypes <> list ind
+R7743:7745 Poly <> mem ind
+R7747:7747 Poly <> Y:162 var
+binder 7733:7733 <> m:166
+R7758:7767 Poly <> parameters ind
+binder 7754:7754 <> p:167
+R7781:7782 Poly <> lc:165 var
+R7793:7795 Coq.Init.Datatypes <> nil constr
+R7800:7802 Coq.Init.Datatypes <> nil constr
+R7809:7810 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7835:7855 Poly <> getTreeFromCheckpoint def
+binder 7827:7830 <> tree:170
+R7884:7906 Poly <> getParamsFromCheckpoint def
+binder 7874:7879 <> params:171
+R7934:7949 Poly <> getTreeFromState def
+R7951:7951 Poly <> X:161 var
+R7953:7953 Poly <> Y:162 var
+R7956:7961 Poly <> expand def
+R7963:7963 Poly <> X:161 var
+R7965:7965 Poly <> Y:162 var
+R7967:7971 Poly <> apply:163 var
+R7973:7976 Poly <> tree:170 var
+R7978:7981 Poly <> tree:170 var
+R7983:7988 Poly <> params:171 var
+R7990:7990 Poly <> m:166 var
+R7992:7994 Coq.Init.Datatypes <> nil constr
+binder 7925:7929 <> ntree:172
+R8020:8028 Poly <> construct def
+R8030:8030 Poly <> X:161 var
+R8032:8032 Poly <> Y:162 var
+R8034:8038 Poly <> apply:163 var
+R8040:8047 Poly <> deepness:164 var
+R8049:8053 Poly <> ntree:172 var
+R8055:8057 Coq.Init.Datatypes <> nil constr
+R8059:8059 Poly <> m:166 var
+R8061:8061 Poly <> p:167 var
+binder 8010:8015 <> nstate:173
+R8072:8072 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8079:8082 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8127:8127 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8073:8078 Poly <> nstate:173 var
+R8083:8100 Poly <> checkpoint_handler:168 def
+R8126:8126 Poly <> p:167 var
+R8124:8124 Poly <> m:166 var
+R8112:8119 Poly <> deepness:164 var
+R8106:8110 Poly <> apply:163 var
+R8104:8104 Poly <> Y:162 var
+R8102:8102 Poly <> X:161 var
+def 8146:8155 <> controller
+binder 8160:8160 <> X:174
+binder 8162:8162 <> Y:175
+R8200:8203 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8182:8197 Poly <> poly_binary_tree ind
+R8199:8199 Poly <> X:174 var
+R8218:8221 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8204:8207 Coq.Init.Datatypes <> list ind
+R8210:8214 Poly <> check ind
+R8216:8216 Poly <> X:174 var
+R8228:8231 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8222:8225 Coq.Init.Datatypes <> list ind
+R8227:8227 Poly <> X:174 var
+R8238:8241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8232:8235 Coq.Init.Datatypes <> list ind
+R8237:8237 Poly <> X:174 var
+R8254:8257 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8242:8245 Coq.Init.Datatypes <> list ind
+R8248:8250 Poly <> mem ind
+R8252:8252 Poly <> Y:175 var
+R8268:8271 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8258:8267 Poly <> parameters ind
+R8272:8274 Poly <> stt ind
+R8276:8276 Poly <> X:174 var
+R8278:8278 Poly <> Y:175 var
+binder 8174:8178 <> apply:176
+R8295:8298 Coq.Init.Datatypes <> list ind
+R8300:8302 Coq.Init.Datatypes <> nat ind
+binder 8284:8291 <> deepness:177
+R8312:8315 Coq.Init.Datatypes <> list ind
+R8318:8322 Poly <> check ind
+R8324:8324 Poly <> X:174 var
+binder 8308:8308 <> l:178
+R8335:8338 Coq.Init.Datatypes <> list ind
+R8341:8343 Poly <> mem ind
+R8345:8345 Poly <> Y:175 var
+binder 8331:8331 <> m:179
+R8356:8365 Poly <> parameters ind
+binder 8352:8352 <> p:180
+R8388:8405 Poly <> checkpoint_handler def
+R8407:8407 Poly <> X:174 var
+R8409:8409 Poly <> Y:175 var
+R8411:8415 Poly <> apply:176 var
+R8417:8424 Poly <> deepness:177 var
+R8426:8426 Poly <> l:178 var
+R8428:8428 Poly <> m:179 var
+R8430:8430 Poly <> p:180 var
+binder 8377:8383 <> control:182
+R8451:8471 Poly <> makeNewCheckpointList def
+R8473:8473 Poly <> X:174 var
+R8475:8475 Poly <> Y:175 var
+R8477:8483 Poly <> control:182 var
+binder 8441:8446 <> newcps:183
+R8496:8503 Poly <> deepness:177 var
+R8514:8516 Coq.Init.Datatypes <> nil constr
+R8521:8523 Coq.Init.Datatypes <> nil constr
+R8530:8531 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8538:8538 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8575:8578 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8613:8613 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R8539:8562 Poly <> getAllTreesFromListState def
+R8564:8564 Poly <> X:174 var
+R8566:8566 Poly <> Y:175 var
+R8568:8574 Poly <> control:182 var
+R8579:8588 Poly <> controller:181 def
+R8612:8612 Poly <> p:180 var
+R8610:8610 Poly <> m:179 var
+R8603:8608 Poly <> newcps:183 var
+R8594:8598 Poly <> apply:176 var
+R8592:8592 Poly <> Y:175 var
+R8590:8590 Poly <> X:174 var
+def 8634:8637 <> make
+binder 8642:8642 <> X:185
+binder 8644:8644 <> Y:186
+R8683:8686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8665:8680 Poly <> poly_binary_tree ind
+R8682:8682 Poly <> X:185 var
+R8701:8704 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8687:8690 Coq.Init.Datatypes <> list ind
+R8693:8697 Poly <> check ind
+R8699:8699 Poly <> X:185 var
+R8711:8714 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8705:8708 Coq.Init.Datatypes <> list ind
+R8710:8710 Poly <> X:185 var
+R8721:8724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8715:8718 Coq.Init.Datatypes <> list ind
+R8720:8720 Poly <> X:185 var
+R8737:8740 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8725:8728 Coq.Init.Datatypes <> list ind
+R8731:8733 Poly <> mem ind
+R8735:8735 Poly <> Y:186 var
+R8751:8754 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8741:8750 Poly <> parameters ind
+R8755:8757 Poly <> stt ind
+R8759:8759 Poly <> X:185 var
+R8761:8761 Poly <> Y:186 var
+binder 8657:8661 <> apply:187
+R8781:8796 Poly <> poly_binary_tree ind
+R8798:8798 Poly <> X:185 var
+binder 8767:8777 <> initialTree:188
+R8812:8814 Coq.Init.Datatypes <> nat ind
+binder 8804:8808 <> steps:189
+R8841:8844 Poly <> upto def
+R8846:8850 Poly <> steps:189 var
+binder 8828:8835 <> deepness:190
+R8867:8870 Poly <> none constr
+binder 8862:8862 <> p:191
+R8891:8899 Poly <> construct def
+R8901:8901 Poly <> X:185 var
+R8903:8903 Poly <> Y:186 var
+R8905:8909 Poly <> apply:187 var
+R8911:8918 Poly <> deepness:190 var
+R8920:8930 Poly <> initialTree:188 var
+R8932:8934 Coq.Init.Datatypes <> nil constr
+R8937:8937 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8945:8947 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8938:8942 Poly <> empty constr
+R8944:8944 Poly <> Y:186 var
+R8948:8950 Coq.Init.Datatypes <> nil constr
+R8953:8953 Poly <> p:191 var
+binder 8881:8886 <> start_:192
+R8974:8999 Poly <> getCheckpointListFromState def
+R9001:9001 Poly <> X:185 var
+R9003:9003 Poly <> Y:186 var
+R9005:9010 Poly <> start_:192 var
+binder 8964:8969 <> checks:193
+R9026:9043 Poly <> getMemoryFromState def
+R9045:9045 Poly <> X:185 var
+R9047:9047 Poly <> Y:186 var
+R9049:9054 Poly <> start_:192 var
+binder 9021:9021 <> m:194
+R9061:9061 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9089:9092 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9133:9133 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9062:9077 Poly <> getTreeFromState def
+R9079:9079 Poly <> X:185 var
+R9081:9081 Poly <> Y:186 var
+R9083:9088 Poly <> start_:192 var
+R9093:9102 Poly <> controller def
+R9104:9104 Poly <> X:185 var
+R9106:9106 Poly <> Y:186 var
+R9108:9112 Poly <> apply:187 var
+R9114:9121 Poly <> deepness:190 var
+R9123:9128 Poly <> checks:193 var
+R9130:9130 Poly <> m:194 var
+R9132:9132 Poly <> p:191 var
