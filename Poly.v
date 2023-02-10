@@ -6,17 +6,6 @@ Require Import Coq.Init.Nat.
 
 (** Polymorphic trees **)
 
-
-(**
-
-[TODO-LIST]
-
-*** Uma função de alta ordem para determinar o fechamento do tableau.
-
-
-**)
-
-
 Inductive mem (X : Type) :=
 | empty
 | record (i : nat) (v : X).
@@ -70,25 +59,6 @@ Inductive parameters :=
 Inductive SignedLF (X : Type) :=
 | T (b : bool) (L : X).
 
-<<<<<<< HEAD
-Inductive node :=
-| Empty
-| Node (SL : SignedLF LF).
-
-Inductive enode :=
-| eEmpty
-| eNode (SL : SignedLF eLF) (n : nat).
-
-Inductive lnode :=
-| lEmpty
-| lNode (SL : SignedLF lLF).
-
-Inductive modal_node :=
-| MEmpty
-| MNode (b : bool) (L : LF) (n : nat).
-
-=======
->>>>>>> 4a9aed482e2af11fd66c2df0a397f66096369e2d
 Inductive check (X : Type) :=
 | checkpoint : poly_binary_tree X -> parameters -> check X.
 
@@ -276,140 +246,7 @@ Definition getSelector (p : parameters) :=
   | none => true
   | selector b => b
   end.
-
-<<<<<<< HEAD
-Definition type2Tableau
-  (snapshot : poly_binary_tree enode)
-  (lc : list (check enode))
-  (listNodes : list enode)
-  (p : parameters)
-  : stt enode :=
-  match listNodes with
-  | nil => state _ (Leaf _ nil) lc
-  | h::tl =>
-      match h with
-      | eEmpty => state _ (Leaf _ nil) lc
-      | eNode SF n =>
-          match SF with
-          | T _ t L =>
-              let unaryRule :=
-                (fun node =>
-                   state _ (Alpha _ node (Leaf _ (node::(explode listNodes)))) lc) in
-              let alphaRule :=
-                (fun node1 node2 =>
-                   state _ (Alpha _ node1 ((Alpha _ node2 (Leaf _ (node1::node2::(explode listNodes)))))) lc) in
-              let betaRule :=
-                (fun node1 node2 =>
-                   state _ (Beta _ (Alpha _ node1 ((Leaf _ (node1::(explode listNodes)))))
-                              (Alpha _ node2 ((Leaf _ (node2::(explode listNodes)))))) lc) in
-              let specialBeta :=
-                (fun node =>
-                   if getSelector p then
-                   state _
-                     (Alpha _ node (Leaf _ (node::(explode listNodes))))
-                     ((checkpoint _ snapshot)::lc)
-                   else
-                     state _
-                       (Alpha _ node (Leaf _ (node::(explode listNodes))))
-                       (lc)
-                ) in
-              match L with
-              | eAtom _ => state _ (Leaf _ (explode listNodes)) lc
-              | l /\e r => 
-                  let an1 := (eNode (T _ true l) 0) in
-                  let an2 := (eNode (T _ true r) 0) in 
-                  let bn1 := (eNode (T _ false l) 0) in
-                  let bn2 := (eNode (T _ false r) 0) in
-                  if t then alphaRule an1 an2
-                  else betaRule bn1 bn2
-              | l \/c r => 
-                  let an1 := (eNode (T _ true (Neg l)) 0) in
-                  let an2 := (eNode (T _ true (Neg r)) 0) in 
-                  let bn1 := (eNode (T _ false (Neg l)) 0) in
-                  let bn2 := (eNode (T _ false (Neg r)) 0) in
-                  if t then betaRule bn1 bn2
-                  else alphaRule an1 an2
-              | l ->c r => 
-                  let an1 := (eNode (T _ true l) 0) in
-                  let an2 := (eNode (T _ true (Neg r)) 0) in 
-                  let bn1 := (eNode (T _ false l) 0) in
-                  let bn2 := (eNode (T _ false (Neg r)) 0) in
-                  if t then betaRule bn1 bn2
-                  else alphaRule an1 an2
-              | l \/i r => 
-                  let an1 := (eNode (T _ false l) 0) in
-                  let an2 := (eNode (T _ false r) 0) in 
-                  let bn1 := (eNode (T _ true l) 0) in
-                  let bn2 := (eNode (T _ true r) 0) in
-                  if t then betaRule bn1 bn2
-                  else
-                    match p with
-                    | none => specialBeta an1
-                    | selector b => if b then specialBeta an1
-                                    else specialBeta an2
-                    end
-              | l ->i r => 
-                  let an1 := (eNode (T _ true l) 0) in
-                  let an2 := (eNode (T _ false r) 0) in 
-                  let bn1 := (eNode (T _ false l) 0) in
-                  let bn2 := (eNode (T _ true r) 0) in
-                  if t then betaRule bn1 bn2
-                  else alphaRule an1 an2
-              | ~e r => 
-                  let an1 := (eNode (T _ false r) 0) in
-                  let an2 := (eNode (T _ true r) 0) in 
-                  if t then unaryRule an1
-                  else unaryRule an2
-              end
-          end
-      end
-  end.
-
-(** Recebe uma lista de nós abertos e retorna uma lista de 
-lista com todas as combinações **)
-
-Fixpoint combinationHelper 
-(n : nat) 
-(listNodes : list nat) : list (list nat) :=
-  match listNodes with
-  | nil => nil
-  | h::tl => (n::tl)::(combinationHelper n tl)
-  end.
-
-Fixpoint linearCombinations (listNodes : list nat) :=
-  match listNodes with 
-  | nil => nil
-  | h::tl => 
-    (combinationHelper h tl)++(linearCombinations tl)
-  end.
-
-Compute linearCombinations (3::4::5::nil).
-
-Compute partition _ (2::3::4::5::nil).
-
-Definition type3Tableau
-  (snapshot : poly_binary_tree lnode)
-  (lc : list (check lnode))
-  (listNodes : list lnode)
-  (p : parameters) : stt lnode :=
-  match listNodes with
-  | nil => state _ (Leaf _ nil) lc
-  | h::tl =>
-      match h with
-      | lEmpty => state _ (Leaf _ nil) lc
-      | lNode SF =>
-          match SF with
-          | T _ t L =>
-            match L with
-            | lAtom _ => state _ (Leaf _ (explode listNodes)) lc
-            | Tensor A B => state _ (Leaf _ (explode listNodes)) lc
-      end
-    end
-  end
-end.
-
-=======
->>>>>>> 4a9aed482e2af11fd66c2df0a397f66096369e2d
+  
 Fixpoint construct
   (X Y : Type)
   (apply : poly_binary_tree X -> list (check X) -> list X -> list X -> list (mem Y) -> parameters -> stt X Y)
@@ -485,13 +322,8 @@ Fixpoint controller
   end.
 
 Definition make
-<<<<<<< HEAD
-  (X : Type)
-  (apply : poly_binary_tree X -> list (check X) -> list X -> parameters -> stt X)
-=======
   (X Y : Type)
   (apply : poly_binary_tree X -> list (check X) -> list X -> list X -> list (mem Y) -> parameters -> stt X Y)
->>>>>>> 4a9aed482e2af11fd66c2df0a397f66096369e2d
   (initialTree : poly_binary_tree X)
   (steps : nat)
   :=
