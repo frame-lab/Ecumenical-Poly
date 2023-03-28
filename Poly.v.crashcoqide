@@ -10,27 +10,18 @@ Inductive mem (X : Type) :=
 | empty
 | record (i : nat) (v : X).
 
-Definition getRecordValueFromMemory 
-  (X : Type) 
-  (m : mem X) 
-  (default : X) :=
+Definition getRecordValueFromMemory (X : Type) (m : mem X) (default : X) :=
   match m with
   | empty _ => default
   | record _ i v => v
   end.
 
-Fixpoint getRecordValueFromIndex 
-  (X : Type) 
-  (lm : list (mem X)) 
-  (k : nat) 
-  (default : X) :=
+Fixpoint getRecordValueFromIndex (X : Type) (lm : list (mem X)) (k : nat) (default : X) :=
   match lm with
   | nil => default
   | h::tl => match h with
              | empty _ => getRecordValueFromIndex _ tl k default
-             | record _ i v => 
-                  if (beq_nat k i) then v else 
-                  getRecordValueFromIndex _ tl k default
+             | record _ i v => if (beq_nat k i) then v else getRecordValueFromIndex _ tl k default
              end
   end.
 
@@ -129,6 +120,8 @@ Check i _ 323 "A". (* indexed string *)
 Check i _ 323 23. (* indexed nat *)
 
 Close Scope string_scope.
+
+
 
 Fixpoint getValueAtPosition {X : Type} (l : list X) (p : nat) (default: X) :=
   match l with

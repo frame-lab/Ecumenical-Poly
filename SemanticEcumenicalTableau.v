@@ -4,7 +4,6 @@ Require Import String.
 Require Import Coq.Arith.EqNat.
 Require Import Coq.Init.Nat.
 
-
 (* Tipo das fórmulas ecumênicas *)
 
 (** TODO : 
@@ -39,7 +38,7 @@ Definition getMaxFromNode (n : node) :=
   | R k j => j
   end.
 
-Notation "@ A"   := (Atom A) (at level 50).
+Notation "! A"   := (Atom A) (at level 50).
 Notation "~ A"     := (Neg A).
 Notation "A /\ B"  := (And A B).
 Notation "A \/i B" := (iOr A B) (at level 100).
@@ -231,24 +230,54 @@ Definition SemanticEcumenicalTableau
       end
   end.
 
-
 Open Scope string_scope.
 
-Definition P := "P".
-Definition Q := "Q".
-Definition S := "S".
-Definition X := "X".
+Definition P := ! "P".
+Definition Q := ! "Q".
+Definition S := ! "S".
+Definition X := ! "X".
 
-Definition node0 := Node (T _ true (@S \/i @P)) 0.
-Definition node1 := Node (T _ false (~(@S /\ ~~(@P /\ @Q)))) 0.
-Definition node2 := Node (T _ false (~((~~@X \/i ~~~~~@P) \/i ~~~~@S))) 0.
-Definition node3 := Node (T _ false (@P \/i ~@P)) 0.
+Definition node0 := Node (T _ true (S \/i P)) 0.
+Definition node1 := Node (T _ false (~(S /\ ~~(P /\ Q)))) 0.
+Definition node2 := Node (T _ false (~((~~X \/i ~~~~~P) \/i ~~~~S))) 0.
+Definition node3 := Node (T _ false (P \/i ~P)) 0.
 
-Definition listnodes := node3::nil.
+Definition listnodes := node1::node3::nil.
 
 Definition l1 := [(R 0 0);(R 1 2);(R 0 1)].
 
+(*
 Compute RemoveAmbiguity (CloseRToTransitivity (R 2 3) l1 l1).
 Compute Transitivity (R 1 2) l1.
+*)
+
+(* Step by step computation *)
+
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 0.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 1.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 2.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 3.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 4.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 5.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 6.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 7.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 8.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 9.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 10.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 11.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 12.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 13.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 14.
 Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 15.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 16.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 17.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 18.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 19.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 20.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 21.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 22.
+Compute make _ _ SemanticEcumenicalTableau (makeInitialTree listnodes listnodes) 23.
+
+
+
 
